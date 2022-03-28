@@ -27,7 +27,6 @@ function ComboBox() {
       disablePortal
       id="combo-box"
       options={locations}
-      sx={{width:300}}
       onInputChange={(e) => checkLength(e.target.value)}
       getOptionLabel={(option) => option.path}
       renderOption={(props, option) => (
