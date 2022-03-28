@@ -29,10 +29,10 @@ function ComboBox() {
       options={locations}
       sx={{width:300}}
       onInputChange={(e) => checkLength(e.target.value)}
-      getOptionLabel={(option) => option.name}
+      getOptionLabel={(option) => option.path}
       renderOption={(props, option) => (
         <Box component="li" sx={{ '& > img': { mr: 2, flexShrink: 0 } }} {...props}>
-          {option.name}
+          {option.path}
         </Box>
       )}
       renderInput={(params) => (
